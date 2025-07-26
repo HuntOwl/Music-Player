@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <video src="" id="bgVidio" autoplay muted loop></video>
+    <audio src="" id="audio"></audio>
+
+<!-- HOME PAGE -->
+    <div class="musicList">
+        <h1 class="homeH1">Daftar Lagu</h1>
+        <ul id="songList"></ul>
+    </div>
+<!-- END -->
+
+<!-- MUSIC PLAYER -->
+    <div class="musicPlayer" style="display: none;">
+        <button class="backHome">Home</button>
+
+        <h1 class="musicName">Song name</h1>
+        <p class="artitsName">artist</p>
+
+        <div class="disk"></div>
+
+        <div class="songSlider">
+            <input type="range" value="0" class="seekBar">
+            <span class="time">00:00</span>
+            <span class="songDuration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-backward"><img src="asset/images/pre.png" alt=""></button>
+            <button class="play pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn btn-forward"><img src="asset/images/nxt.png" alt=""></button>
+        </div>
+    </div>
+<!-- END -->
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
